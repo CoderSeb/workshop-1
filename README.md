@@ -22,3 +22,7 @@ Mät app kodkvalitet Code metrics
 [] - Kolla antal imports
 
 [x] - Kolla antal console.log
+
+[] - Kolla antal TODOs
+
+[] - Kolla antal Switch-satser och deras antal tillhörande cases.

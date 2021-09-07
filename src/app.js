@@ -1,7 +1,7 @@
 import CodeMetrics from "./CodeMetrics.js"
 import fs from "fs-extra"
 
-const buffer = fs.readFileSync("./codeFiles/file01.js")
+const buffer = fs.readFileSync("./codeFiles/testFile01.js")
 const fileContent = buffer.toString()
 
 const codeMetrics = new CodeMetrics(fileContent)

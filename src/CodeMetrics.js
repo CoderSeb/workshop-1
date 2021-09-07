@@ -1,11 +1,11 @@
-class CodeMetrics{
+class CodeMetrics {
   #file
   #rowsWithCode
   #rowsWithComments
   #noOfIfStatements
   #noOfConsoleLogs
-  
-  constructor(file){
+
+  constructor(file) {
     this.#file = file
     this.#rowsWithCode = this.calcRowsWithCode()
     this.#rowsWithComments = this.calcRowsWithComments()
@@ -13,16 +13,16 @@ class CodeMetrics{
     this.#noOfConsoleLogs = this.calcConsoleLogs()
   }
 
-  getFile(){
+  getFile() {
     return this.#file
   }
 
-  getRowsWithCode(){
+  getRowsWithCode() {
     return this.#rowsWithCode
   }
 
-  splitFile(){
-    return this.#file.split("\n")
+  splitFile() {
+    return this.#file.split('\n')
   }
 
   getNoOfIfStatements() {
@@ -37,11 +37,11 @@ class CodeMetrics{
     return this.#noOfConsoleLogs
   }
 
-  calcRowsWithComments(){
+  calcRowsWithComments() {
     return this.iterateFileForMatches(/(?:\/+)|(?:\*\/)|(?:\*+)/g)
   }
 
-  calcRowsWithCode(){
+  calcRowsWithCode() {
     return this.iterateFileForMatches(/.+/g) - this.calcRowsWithComments()
   }
 
@@ -52,10 +52,6 @@ class CodeMetrics{
   calcConsoleLogs() {
     return this.iterateFileForMatches(/console\.log\(([^)]+)\)/g)
   }
-
-  // TODO: Check for no of for-loops
-
-  // TODO: CHeck for no of imports
 
   iterateFileForMatches(regex) {
     let nrOfOccurences = 0

@@ -19,3 +19,13 @@ if (true) {
   console.log('It\s true')
 }
 
+switch(greeting) {
+  case 'Hello':
+    return 'World'
+  case 'Howdy':
+    return 'partner'
+  case 'What\'s up?':
+    return 'Homie'
+  default:
+    return greeting
+}
