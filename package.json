@@ -1,0 +1,24 @@
+{
+  "name": "workshop-1",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderSeb/workshop-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderSeb/workshop-1/issues"
+  },
+  "homepage": "https://github.com/CoderSeb/workshop-1#readme",
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}
